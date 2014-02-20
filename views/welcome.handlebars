@@ -1,94 +1,59 @@
+
 <!DOCTYPE html>
-<html>
-        <head>
-                <title>instaCal </title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link href = "css/bootstrap.min.css" rel = "stylesheet">
-                <link href = "css/styles.css" rel = "stylesheet">
-        </head>
-        <body>
- 
-            <div class = "navbar navbar-default navbar-static-top">
-                <div class = "container">
-                               
-                    <a href = "index.html" class = "navbar-brand">instaCal</a>
-                               
-                        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-                            <span class = "icon-bar"></span>
-                            <span class = "icon-bar"></span>
-                            <span class = "icon-bar"></span>
-                        </button>
-                               
-                        <div class = "collapse navbar-collapse navHeaderCollapse">
-                               
-                            <ul class = "nav navbar-nav navbar-right">
-                                       
-                                <li class = "active"><a href = "index.html">Feed</a></li>
-                                <li><a href = "friends.html">Friends</a></li>
-                                <li><a href = "profile.html">Profile</a></li>
-                                <li><a href = "calander.html">My Calander</a></li>
-                                <li><a href = "notifi.html">Notifications</a></li>
-                                <li><a href = "settings.html">Settings</a></li>
-                                <li><a href = "welcome.html">Sign out</a></li>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-                                
-                                       
-                            </ul>
-                               
-                        </div>
-                               
-                </div>
-            </div>
+    <title>Welcome to instaCal</title>
 
-            <div class = "container">
-                <img src="images/dhanuk.jpg" class="img-thumbnail"  >
-                
-                <h3 class="text-center">Dhanuk Withana</h3>
+    <!-- Bootstrap core CSS -->
+    <link href = "css/bootstrap.min.css" rel="stylesheet">
+    <link href = "css/styles.css" rel = "stylesheet">
 
-                 <div class = "container">
-                    UCSD 2015 
-                 </div>
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
 
-                <div class = "container">
-                    <h5>Dhanuk's Filers</h5>
+  </head>
 
-                </div>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-default"> Friends</button>
-                <script>
-                    $('#loading-example-btn').click(function () {
-                    var btn = $(this)
-                    btn.button('loading')
-                    $.ajax(...).always(function () {
-                    btn.button('reset')});
-                    });
-                </script>
+  <body>
 
-                <p><a class="btn btn-warning btn-lg btn-sm" href="addfilter.html" role="button">Add Filter</a></p>
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="contactus">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">InstaCal</h3>
+      </div>
 
-            </div>
-               
-                
+      <div class="jumbotron">
+        <h1>InstaCal</h1>
+        <p class="lead">instaCal is the new way to share Calendars with your friends and fans.</p>
+        <p><a class="btn btn-success btn-lg btn-block" href="signup" role="button">Sign up</a></p>
+        <p><a class="btn btn-primary btn-lg btn-block" href="signin" role="button">Sign in</a></p>
+       
+      </div>
 
 
-
-
-			<div class = "navbar navbar-inverse navbar-fixed-bottom">
+      <div class = "navbar navbar-inverse navbar-fixed-bottom">
                
                 <div class = "container">
                     <p class = "navbar-text pull-left">&copy;2014 instaCal</p>
-
-                    <p class = "navbar-text pull-right"><a href = "contactus.html"> Contact </a></p>
-                    <p class = "navbar-text pull-right"><a href = "about.html"> About .</a></p>
-
-
-                    
                 </div>
                
-            </div>
+      </div>
+
+    </div> <!-- /container -->
 
 
-            <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-            <script src = "js/bootstrap.js"></script>
-               
-        </body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
 </html>

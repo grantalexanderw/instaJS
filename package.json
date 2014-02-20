@@ -1,7 +1,7 @@
 {
-  "name": "IntroHCI",
+  "name": "instaCal",
   "version": "0.0.1",
-  "author": "Intro HCI Staff",
+  "author": "Group ",
 
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
 
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node insta.js"
   },
   "dependencies": {
     "express": "3.x",

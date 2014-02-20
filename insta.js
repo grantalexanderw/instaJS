@@ -23,11 +23,12 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', signin.view);
+app.get('/', index.welcome);
 app.get('/index', index.view);
 app.get('/forgot', forgot.view);
 app.get('/friends', friends.view);
 app.get('/signin', index.signin);
+app.get('/calendar', index.calendar);
 
 
 http.createServer(app).listen(app.get('port'), function(){
