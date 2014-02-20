@@ -41,3 +41,7 @@ exports.addfilter = function(req, res){
 exports.contactus = function(req, res){
 	res.render('contactus');
 };
+exports.settings = function(req, res){
+	res.render('settings');
+};
+
