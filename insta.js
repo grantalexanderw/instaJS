@@ -10,7 +10,7 @@ var forgot = require('./routes/forgot');
 var friends = require('./routes/friends');
 var app = express();
 
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 3000);
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
