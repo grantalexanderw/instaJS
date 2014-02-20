@@ -35,13 +35,27 @@ exports.forgot = function(req, res){
 exports.about = function(req, res){
 	res.render('about');
 };
+
 exports.addfilter = function(req, res){
 	res.render('addfilter');
 };
+
 exports.contactus = function(req, res){
 	res.render('contactus');
 };
+
 exports.settings = function(req, res){
 	res.render('settings');
 };
 
+exports.people = function(req, res){
+	res.render('people');
+};
+
+exports.friendprofile = function(req, res){
+	res.render('friendprofile');
+};
+
+exports.notfollowing = function(req, res){
+	res.render('notfollowing');
+};
