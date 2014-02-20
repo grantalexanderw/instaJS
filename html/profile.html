@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
         <head>
-                <title>instaCal - Notificatuions </title>
+                <title>instaCal </title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link href = "css/bootstrap.min.css" rel = "stylesheet">
                 <link href = "css/styles.css" rel = "stylesheet">
@@ -39,14 +39,35 @@
                                
                 </div>
             </div>
+
             <div class = "container">
-               
-                <div class = "jumbotron">
-                    <text-center><h3>Notifications</h3>
-                     <h5>You have no new notifications.</h5>
+                <img src="images/dhanuk.jpg" class="img-thumbnail"  >
+                
+                <h3 class="text-center">Dhanuk Withana</h3>
+
+                 <div class = "container">
+                    UCSD 2015 
                  </div>
-               
+
+                <div class = "container">
+                    <h5>Dhanuk's Filers</h5>
+
+                </div>
+                <button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-default"> Friends</button>
+                <script>
+                    $('#loading-example-btn').click(function () {
+                    var btn = $(this)
+                    btn.button('loading')
+                    $.ajax(...).always(function () {
+                    btn.button('reset')});
+                    });
+                </script>
+
+                <p><a class="btn btn-warning btn-lg btn-sm" href="addfilter.html" role="button">Add Filter</a></p>
+
             </div>
+               
+                
 
 
 

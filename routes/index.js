@@ -35,3 +35,9 @@ exports.forgot = function(req, res){
 exports.about = function(req, res){
 	res.render('about');
 };
+exports.addfilter = function(req, res){
+	res.render('addfilter');
+};
+exports.contactus = function(req, res){
+	res.render('contactus');
+};
