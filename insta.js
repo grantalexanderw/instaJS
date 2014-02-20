@@ -3,11 +3,8 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 
-var welcome = require('./routes/welcome');
 var index = require('./routes/index');
-var signin = require('./routes/signin');
-var forgot = require('./routes/forgot');
-var friends = require('./routes/friends');
+
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
@@ -25,10 +22,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', index.welcome);
 app.get('/index', index.view);
-app.get('/forgot', forgot.view);
-app.get('/friends', friends.view);
+app.get('/forgot', index.forgot);
+app.get('/friends', index.friends);
 app.get('/signin', index.signin);
 app.get('/calendar', index.calendar);
+app.get('/addevent', index.addevent);
 
 
 http.createServer(app).listen(app.get('port'), function(){
