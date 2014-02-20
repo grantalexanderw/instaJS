@@ -1,0 +1,11 @@
+@import url('http://twitter.github.com/bootstrap/assets/css/bootstrap.css');
+
+/*
+@import url('http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css');
+*/
+
+.imageClip{
+    width:50%;
+    height:auto;
+    overflow:hidden;
+}
