@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
         <head>
-                <title>instaCal </title>
+                <title>instaCal - Add Filter</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link href = "public/css/bootstrap.min.css" rel = "stylesheet">
-                <link href = "public/css/styles.css" rel = "stylesheet">
+                <link href = "css/bootstrap.min.css" rel = "stylesheet">
+                <link href = "css/styles.css" rel = "stylesheet">
         </head>
         <body>
  
@@ -26,7 +26,7 @@
                                 <li class = "active"><a href = "index">Feed</a></li>
                                 <li><a href = "friends">Friends</a></li>
                                 <li><a href = "profile">Profile</a></li>
-                                <li><a href = "calander">My Calander</a></li>
+                                <li><a href = "calendar">My Calendar</a></li>
                                 <li><a href = "notifi">Notifications</a></li>
                                 <li><a href = "settings">Settings</a></li>
                                 <li><a href = "welcome">Sign out</a></li>
@@ -39,41 +39,42 @@
                                
                 </div>
             </div>
+
             <div class = "container">
-                <h5>Friends</h5>
+                <label for="examplefilter">Filter Name</label>
+                <input type="FilterName" class="form-control" placeholder="Filter Name" required autofocus>
+                <label for="examplePrivacy">Privacy</label>
+                <select input type="text" class="form-control" placeholder="Month">
+                    <option>Public</option>
+                    <option>Friends</option>
+                    <option>Following</option>
+                    <option>Select Friends</option>
+                </select>
+                <label for="SelectFriends">Select Friends</label>
+                //js add friends
                 <div class="row">
-                    <div class="col-xs-9">
-                        <input type="text" class="form-control" placeholder="Search">
+                    <div class="col-xs-6">
+                        <p><a class="btn btn-lg btn-success" href="profile" role="button">Create Filter</a></p>
                     </div>
-                <button type="submit" class="btn btn-default">Search</button>
-      
-     			<hr></hr>
-
-                {{#each friends}}
-                <div class= "friends">
-                    <img src="{{imageURL}}" class="img-responsive">
-                    <h3><a href="#" class="namelisten">{{name}}</h3></a>
-                    <label for="persondescription">{{description}}</label>
-                    <hr></hr>
-                    <label for="sharefilter">You can see {{name}} {{Filters}} filters.</label>
-                    <hr></hr>
-                    <hr></hr>
+                <div class="col-xs- 5">
+                        <p><a class="btn btn-lg btn-danger" href="profile" role="button">Cancel</a></p>
                 </div>
-                {{/each}}
+
+                 
             </div>
+               
+                
 
 
 
 
-
-            <hr></hr>
 			<div class = "navbar navbar-inverse navbar-fixed-bottom">
                
                 <div class = "container">
                     <p class = "navbar-text pull-left">&copy;2014 instaCal</p>
 
-                    <p class = "navbar-text pull-right"><a href = "contactus.html"> Contact </a></p>
-                    <p class = "navbar-text pull-right"><a href = "about.html"> About .</a></p>
+                    <p class = "navbar-text pull-right"><a href = "contactus"> Contact </a></p>
+                    <p class = "navbar-text pull-right"><a href = "about"> About .</a></p>
 
 
                     

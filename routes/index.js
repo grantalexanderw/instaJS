@@ -31,3 +31,13 @@ exports.friends = function(req, res){
 exports.forgot = function(req, res){
 	res.render('forgot');
 };
+
+exports.about = function(req, res){
+	res.render('about');
+};
+exports.addfilter = function(req, res){
+	res.render('addfilter');
+};
+exports.contactus = function(req, res){
+	res.render('contactus');
+};
