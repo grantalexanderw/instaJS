@@ -41,23 +41,38 @@
             </div>
 
             <div class = "container">
-                <label for="examplefilter">Filter Name</label>
-                <input type="FilterName" class="form-control" placeholder="Filter Name" required autofocus>
-                <label for="examplePrivacy">Privacy</label>
-                <select input type="text" class="form-control" placeholder="Month">
-                    <option>Public</option>
-                    <option>Friends</option>
+                <label for="examplefilter">Title</label>
+                <input type="Name" class="form-control" placeholder="Title" required autofocus>
+                <label for="exampleFilters">Privacy</label>
+                <select input type="text" class="form-control" placeholder="">
+                    <option>JSON1</option>
+                    <option>JSON2</option>
                     <option>Following</option>
                     <option>Select Friends</option>
                 </select>
-                <label for="SelectFriends">Select Friends</label>
-                //js add friends
+                <label for="starttime">Start Time</label>
+                <div class="row">
+                    <div class="col-xs-3">
+                    <input type="timehour" class="form-control" placeholder="12">
+                    </div>
+                    <div class="col-xs-3">
+                    <input type="timemins" class="form-control" placeholder="00">
+                    </div>
+                    <div class="col-xs-3">
+                        <select input type="text" class="form-control" placeholder="Month">
+                            <option>AM</option>
+                            <option>PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="Endtime">End Time</label>
                 <div class="row">
                     <div class="col-xs-6">
-                        <p><a class="btn btn-lg btn-success" href="profile" role="button">Create Filter</a></p>
+                        <p><a class="btn btn-lg btn-success" href="profile" role="button">Create Event</a></p>
                     </div>
                 <div class="col-xs- 5">
-                        <p><a class="btn btn-lg btn-danger" href="profile" role="button">Cancel</a></p>
+                        <p><a class="btn btn-lg btn-danger" href="calander" role="button">Cancel</a></p>
                 </div>
 
                  
