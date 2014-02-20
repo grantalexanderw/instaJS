@@ -67,3 +67,7 @@ exports.notifi = function(req, res) {
 exports.emptyNoti = function (req, res) {
 	res.render('emptyNoti');
 }
+
+exports.profile = function(req, res){
+	res.render('profile');
+}
