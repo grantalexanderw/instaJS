@@ -25,7 +25,7 @@ app.get('/index', index.view);
 app.get('/forgot', index.forgot);
 app.get('/friends', index.friends);
 app.get('/signin', index.signin);
-app.get('/signup'), index.signup);
+app.get('/signup', index.signup);
 app.get('/calendar', index.calendar);
 app.get('/addevent', index.addevent);
 app.get('/about', index.about);
