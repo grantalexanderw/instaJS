@@ -31,3 +31,7 @@ exports.friends = function(req, res){
 exports.forgot = function(req, res){
 	res.render('forgot');
 };
+
+exports.about = function(req, res){
+	res.render('about');
+};
