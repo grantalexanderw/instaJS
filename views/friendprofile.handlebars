@@ -1,94 +1,104 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <title>instaCal </title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link href = "css/bootstrap.min.css" rel = "stylesheet">
-                <link href = "css/styles.css" rel = "stylesheet">
-        </head>
-        <body>
- 
-            <div class = "navbar navbar-default navbar-static-top">
-                <div class = "container">
-                               
-                    <a href = "index" class = "navbar-brand">instaCal</a>
-                               
-                        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-                            <span class = "icon-bar"></span>
-                            <span class = "icon-bar"></span>
-                            <span class = "icon-bar"></span>
-                        </button>
-                               
-                        <div class = "collapse navbar-collapse navHeaderCollapse">
-                               
-                            <ul class = "nav navbar-nav navbar-right">
-                                       
-                                <li class = "active"><a href = "index">Feed</a></li>
-                                <li><a href = "friends">Friends</a></li>
-                                <li><a href = "profile">Profile</a></li>
-                                <li><a href = "calendar">My Calendar</a></li>
-                                <li><a href = "notifi">Notifications</a></li>
-                                <li><a href = "settings">Settings</a></li>
-                                <li><a href = "welcome">Sign out</a></li>
+<head>
+    <title>instaCal </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "css/styles.css" rel = "stylesheet">
+</head>
+<body>
 
-                                
-                                       
-                            </ul>
-                               
-                        </div>
-                               
-                </div>
-            </div>
+    <div class = "navbar navbar-default navbar-static-top">
+        <div class = "container">
 
-            <div class = "container" style="margin-bottom:75px">
-                <img src="images/dhanuk.jpg" class="img-thumbnail"  >
-                
-                <h3 class="text-center">Dhanuk Withana</h3>
+            <a href = "index" class = "navbar-brand">instaCal</a>
 
-                 <div class = "container">
-                    UCSD 2015 
-                 </div>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+            </button>
 
-                <div class = "container">
-                    <h5>Dhanuk's Filers</h5>
+            <div class = "collapse navbar-collapse navHeaderCollapse">
 
-                </div>
-                <button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-default"> Friends</button>
-                <script>
-                    $('#loading-example-btn').click(function () {
-                    var btn = $(this)
-                    btn.button('loading')
-                    $.ajax(...).always(function () {
-                    btn.button('reset')});
-                    });
-                </script>
+                <ul class = "nav navbar-nav navbar-right">
 
-                <p><a class="btn btn-warning btn-lg btn-sm" href="addfilter" role="button">Add Filter</a></p>
+                    <li class = "active"><a href = "index">Feed</a></li>
+                    <li><a href = "friends">Friends</a></li>
+                    <li><a href = "profile">Profile</a></li>
+                    <li><a href = "calendar">My Calendar</a></li>
+                    <li><a href = "notifi">Notifications</a></li>
+                    <li><a href = "settings">Settings</a></li>
+                    <li><a href = "welcome">Sign out</a></li>
+
+
+
+                </ul>
 
             </div>
-               
-                
 
+        </div>
+    </div>
+    <div class = "container" style="margin-bottom:75px">
+        <div class = "jumbotron text-center">
 
+            <img src="https://scontent-a-pao.xx.fbcdn.net/hphotos-prn1/t1/12153_10202328033435552_1185023390_n.jpg" class="img-thumbnail imageClip"  >
 
+            <h3 class="text-center">Grant Wiesnoski</h3>
 
-			<div class = "navbar navbar-inverse navbar-fixed-bottom">
-               
-                <div class = "container">
-                    <p class = "navbar-text pull-left">&copy;2014 instaCal</p>
-
-                    <p class = "navbar-text pull-right"><a href = "contactus"> Contact </a></p>
-                    <p class = "navbar-text pull-right"><a href = "about"> About .</a></p>
-
-
-                    
+            <div class = "container">
+                <h7> Bio: </h7>
+                <div style="margin-top: 1px"> 
+                    <small> If it works then you can try manipulating what you have or adding other formatting to this and achieving what you desire. Because you are using bootstrap doesn't mean if it doesn't offer you what you want then you just manage it. You are working with your codes and so you command it to do as you say. Cheers!
+                    </small>
                 </div>
-               
+
             </div>
+            <div style="margin-top: 10px"> 
+
+                <p align="left"><button type="button pull-left" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-default"> Friends
+                </button>
+
+                <a class="btn btn-warning btn-lg btn-sm pull-right" href="addfilter" role="button">Grant's Calendar</a>
+            </p>
+        </div>
 
 
-            <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-            <script src = "js/bootstrap.js"></script>
-               
-        </body>
+        <script>
+        $('#loading-example-btn').click(function () {
+            var btn = $(this)
+            btn.button('loading')
+            $.ajax(...).always(function () {
+                btn.button('reset')});
+        });
+        </script>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+<div class = "navbar navbar-inverse navbar-fixed-bottom">
+
+    <div class = "container">
+        <p class = "navbar-text pull-left">&copy;2014 instaCal</p>
+
+        <p class = "navbar-text pull-right"><a href = "contactus"> | Contact </a></p>
+        <p class = "navbar-text pull-right"><a href = "about"> About |</a></p>
+
+
+
+    </div>
+
+</div>
+
+
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src = "js/bootstrap.js"></script>
+
+</body>
 </html>
