@@ -59,3 +59,11 @@ exports.friendprofile = function(req, res){
 exports.notfollowing = function(req, res){
 	res.render('notfollowing');
 };
+
+exports.notifi = function(req, res) {
+	res.render('notifi');
+};
+
+exports.emptyNoti = function (req, res) {
+	res.render('emptyNoti');
+}
