@@ -1,0 +1,29 @@
+{
+	"Following": [
+		{
+			"name": "Snoop Dogg",
+			"description": "Artist",
+			"imageURL": "images/snoop.jpg",
+			"Filters": "Tour"
+
+		},
+		{
+			"name": "Bian Clark",
+			"description": "UCSD '16 La Jolla CA",
+			"imageURL": "images/brian.jpg",
+			"Filters": "Work, Class, Tennis"
+		},
+		{
+			"name": "Bian Clark",
+			"description": "UCSD '16 La Jolla CA",
+			"imageURL": "images/brian.jpg",
+			"Filters": "Work, Class, Tennis"
+		},
+		{
+			"name": "Bian Clark",
+			"description": "UCSD '16 La Jolla CA",
+			"imageURL": "images/brian.jpg",
+			"Filters": "Work, Class, Tennis"		
+		},
+	]
+}

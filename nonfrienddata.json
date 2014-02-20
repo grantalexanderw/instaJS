@@ -1,0 +1,29 @@
+{
+	"Not friends": [
+		{
+			"name": "Melissa Cameron",
+			"description": "UCSD '14 La Jolla CA",
+			"imageURL": "images/melissa.jpg",
+			"Filters": "Work, Class"
+
+		},
+		{
+			"name": "Bian Clark",
+			"description": "UCSD '16 La Jolla CA",
+			"imageURL": "images/brian.jpg",
+			"Filters": "Work, Class, Tennis"
+		},
+		{
+			"name": "Bian Clark",
+			"description": "UCSD '16 La Jolla CA",
+			"imageURL": "images/brian.jpg",
+			"Filters": "Work, Class, Tennis"
+		},
+		{
+			"name": "Bian Clark",
+			"description": "UCSD '16 La Jolla CA",
+			"imageURL": "images/brian.jpg",
+			"Filters": "Work, Class, Tennis"		
+		},
+	]
+}

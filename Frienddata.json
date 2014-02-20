@@ -1,0 +1,29 @@
+{
+	"friends": [
+		{
+			"name": "Brian Clark",
+			"description": "UCSD '16 La Jolla CA",
+			"imageURL": "images/imgres.jpg",
+			"Filters": "Work, Class, and Tennis"
+
+		},
+		{
+			"name": "Brian Clark",
+			"description": "UCSD '16 La Jolla CA",
+			"imageURL": "images/imgress.jpg",
+			"Filters": "Work, Class, and Tennis"
+		},
+		{
+			"name": "Brian Clark",
+			"description": "UCSD '16 La Jolla CA",
+			"imageURL": "images/imgres.jpg",
+			"Filters": "Work, Class, and Tennis"
+		},
+		{
+			"name": "Brian Clark",
+			"description": "UCSD '16 La Jolla CA",
+			"imageURL": "images/imgres.jpg",
+			"Filters": "Work, Class, and Tennis"		
+		}
+	]
+}
