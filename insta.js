@@ -27,6 +27,8 @@ app.get('/', signin.view);
 app.get('/index', index.view);
 app.get('/forgot', forgot.view);
 app.get('/friends', friends.view);
+app.get('/signin', index.signin);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
