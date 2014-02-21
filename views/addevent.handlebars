@@ -23,7 +23,7 @@
                                
                             <ul class = "nav navbar-nav navbar-right">
                                        
-                                <li class = "active"><a href = "index">Feed</a></li>
+                                <li><a href = "index">Feed</a></li>
                                 <li><a href = "friends">Friends</a></li>
                                 <li><a href = "profile">Profile</a></li>
                                 <li><a href = "calendar">My Calendar</a></li>
@@ -42,7 +42,7 @@
 
             <div class = "container" style="margin-bottom:75px">
                 <label for="examplefilter">Title</label>
-                <input type="Name" class="form-control" placeholder="Title" required autofocus>
+                <input type="text" class="form-control" id="title" placeholder="Title" required autofocus>
                 <label for="exampleFilters">Privacy</label>
                 <select input type="text" class="form-control" placeholder="">
                     <option>JSON1</option>
@@ -54,7 +54,7 @@
                 <label for="StartDate">Start Date</label>
                 <div class="row">
                     <div class="col-xs-4">
-                        <select input type="text" class="form-control" placeholder="Month">
+                        <select input type="text" class="form-control" placeholder="Month" id= "startmonth">
                             <option>Jan</option>
                             <option>Feb</option>
                             <option>Mar</option>
@@ -70,10 +70,10 @@
                         </select>
                     </div>
                     <div class="col-xs-3">
-                        <input type="text" class="form-control" placeholder="DD">
+                        <input type="text" class="form-control" placeholder="DD" id = 'startdate'>
                     </div>
                     <div class="col-xs-5">
-                        <input type="text" class="form-control" placeholder="YYYY">
+                        <input type="text" class="form-control" placeholder="YYYY" id = "startyear">
                     </div>
                     <p></p>
                 </div>
@@ -81,13 +81,13 @@
                 <label for="starttime">Start Time</label>
                 <div class="row">
                     <div class="col-xs-4">
-                        <input type="timehour" class="form-control" placeholder="12">
+                        <input type="timehour" class="form-control" placeholder="12" id="starthour">
                     </div>
                     <div class="col-xs-4">
-                        <input type="timemins" class="form-control" placeholder="00">
+                        <input type="timemins" class="form-control" placeholder="00" id="startminute">
                     </div>
                     <div class="col-xs-4">
-                        <select input type="text" class="form-control" placeholder="PM">
+                        <select input type="text" class="form-control" placeholder="PM" id="startampm">
                             <option>AM</option>
                             <option>PM</option>
                         </select>
@@ -97,7 +97,7 @@
                 <label for="EndDate">End Date</label>
                     <div class="row">
                         <div class="col-xs-4">
-                            <select input type="text" class="form-control" placeholder="Month">
+                            <select input type="text" class="form-control" placeholder="Month" id= "endmonth">
                                 <option>Jan</option>
                                 <option>Feb</option>
                                 <option>Mar</option>
@@ -113,10 +113,10 @@
                             </select>
                         </div>
                         <div class="col-xs-3">
-                            <input type="text" class="form-control" placeholder="DD">
+                            <input type="text" class="form-control" placeholder="DD" id= "enddate">
                         </div>
                         <div class="col-xs-5">
-                            <input type="text" class="form-control" placeholder="YYYY">
+                            <input type="text" class="form-control" placeholder="YYYY" id= "endyear">
                             <p></p>
                         </div>
                     </div>
@@ -124,13 +124,13 @@
                 <label for="Endtime">End Time</label>
                     <div class="row">
                         <div class="col-xs-4">
-                            <input type="timehour" class="form-control" placeholder="01">
+                            <input type="timehour" class="form-control" placeholder="01" id= "endhour">
                         </div>
                     <div class="col-xs-4">
-                        <input type="timemins" class="form-control" placeholder="00">
+                        <input type="timemins" class="form-control" placeholder="00" id= "endminute">
                     </div>
                     <div class="col-xs-4">
-                        <select input type="text" class="form-control" placeholder="PM">
+                        <select input type="text" class="form-control" placeholder="PM" id= "endampm">
                             <option>AM</option>
                             <option>PM</option>
                         </select>
@@ -139,19 +139,18 @@
                    
                    <div class = "container" style="margin-bottom:15px">
                     <label for="Notes">Notes</label>
-                        <textarea class="form-control" rows="3"></textarea></div>
+                        <textarea class="form-control" rows="3" id="notes"></textarea></div>
                 </div>
 
                 <div class="row">
                     <div class="col-xs-6">
-                        <p><a class="btn btn-lg btn-success" href="profile" role="button">Create Event</a></p>
+                        <p><a class="btn btn-primary btn-lg" href="eventsuccess" role="button">Create Event</a></p>
                     </div>
+
+
                 <div class="col-xs- 5">
                         <p><a class="btn btn-lg btn-danger" href="calendar" role="button">Cancel</a></p>
                 </div>
-
-                 
-            </div>
                
                 
 

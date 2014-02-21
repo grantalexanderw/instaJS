@@ -4,6 +4,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
+var calendar = require('./routes/calendar');
 
 var app = express();
 
@@ -39,6 +40,9 @@ app.get('/people', index.people);
 app.get('/notifi', index.notifi);
 app.get('/notfollowing', index.notfollowing);
 app.get('/friendprofile', index.friendprofile);
+app.get('/eventsuccess', calendar.eventsuccess);
+
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
