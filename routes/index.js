@@ -52,10 +52,6 @@ exports.people = function(req, res){
 	res.render('people');
 };
 
-exports.friendprofile = function(req, res){
-	res.render('friendprofile');
-};
-
 exports.notfollowing = function(req, res){
 	res.render('notfollowing');
 };
@@ -66,8 +62,8 @@ exports.notifi = function(req, res) {
 
 exports.emptyNoti = function (req, res) {
 	res.render('emptyNoti');
-}
+};
 
 exports.profile = function(req, res){
 	res.render('profile');
-}
+};

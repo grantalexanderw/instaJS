@@ -1,15 +1,15 @@
-exports.snoop = function(req, res){
-	res.render('snoop');
+exports.grantprofile = function(req, res){
+	res.render('grantprofile');
 };
 
-exports.snoop = function(req, res){
-	res.render('snoop');
+exports.brianprofile = function(req, res){
+	res.render('brianprofile');
 };
 
-exports.snoop = function(req, res){
-	res.render('snoop');
+exports.snoopprofile = function(req, res){
+	res.render('snoopprofile');
 };
 
-exports.snoop = function(req, res){
-	res.render('snoop');
+exports.imaginedragonsprofile = function(req, res){
+	res.render('imaginedragonsprofile');
 };

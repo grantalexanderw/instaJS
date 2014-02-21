@@ -4,6 +4,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
+var profile = require('./routes/profile');
 
 var app = express();
 
@@ -38,7 +39,12 @@ app.get('/settings', index.settings);
 app.get('/people', index.people);
 app.get('/notifi', index.notifi);
 app.get('/notfollowing', index.notfollowing);
-app.get('/friendprofile', index.friendprofile);
+app.get('/brianprofile', profile.brianprofile);
+app.get('/grantprofile', profile.grantprofile);
+app.get('/snoopprofile', profile.snoopprofile);
+app.get('/imaginedragonsprofile', profile.imaginedragonsprofile);
+
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
