@@ -4,7 +4,11 @@ var path = require('path');
 var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
+<<<<<<< HEAD
 var calendar = require('./routes/calendar');
+=======
+var profile = require('./routes/profile');
+>>>>>>> 6b9a993b142c7c01b5774c3875ad4c80d1478a29
 
 var app = express();
 
@@ -39,8 +43,15 @@ app.get('/settings', index.settings);
 app.get('/people', index.people);
 app.get('/notifi', index.notifi);
 app.get('/notfollowing', index.notfollowing);
+<<<<<<< HEAD
 app.get('/friendprofile', index.friendprofile);
 app.get('/eventsuccess', calendar.eventsuccess);
+=======
+app.get('/brianprofile', profile.brianprofile);
+app.get('/grantprofile', profile.grantprofile);
+app.get('/snoopprofile', profile.snoopprofile);
+app.get('/imaginedragonsprofile', profile.imaginedragonsprofile);
+>>>>>>> 6b9a993b142c7c01b5774c3875ad4c80d1478a29
 
 
 
